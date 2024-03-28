@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: white;
+}
+
+.banner {
+  width: 1204px;
+  /* height: 563px; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  margin: 70px auto;
+}
+
+.banner .login {
+  width: 465px;
+  height: 561px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFBFA;
+}
+
+.banner .content {
+  width: 739px;
+  height: 561px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  opacity: 0.8;
+}
+
+.content .text {
+  text-align: center;
+  color: #ebebed;
+}
+
+.content .text h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.div1 {
+  margin: 90px 10px 0 70px;
+}
+
+.div2 {
+  margin: 10px 10px 0 70px;
+}
+
+.div1 input,
+label {
+  font-size: 18px;
+  font-weight: 400;
+  width: calc(100% - 50px);
+  height: 56px;
+}
+
+.div2 input,
+label {
+  width: calc(100% - 50px);
+  height: 56px;
+  line-height: 60px;
+}
+
+/* label,
+input {
+  line-height: 0px;
+  margin: 18px;
+  width: calc(100% - 80px);
+  margin-left: 40px;
+} */
+
+input[type="text"] {
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #747474;
+  background: #d9d9d9;
+}
+
+.btn button{
+  float: right;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  width: 64px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.8;
+  margin: 20px 60px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer {
+  margin: 150px 70px;
+}
+
+.footer a {
+  color: #257de4;
+  text-decoration: none;
+  line-height: 29px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Responsive  */
+/* @media screen and (min-width: 768px) {
+    .banner {
+        grid-template-columns: 500px 1fr;
+        
+    }
+} */
+
+@media screen and (max-width: 992px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 90%;
+
+  }
+
+  .banner .login {
+    width: 100%;
+    display: block;
+  }
+
+  .banner .content {
+    min-height: 563px;
+    width: 100%;
+    display: block;
+
+  }
+
+  .text h1 {
+    position: relative;
+    top: 250px;
+
+  }
+
+  .btn button {
+    width: calc(100% - 130px);
+    height: 40px;
+    margin: 40px 60px 0 0;
+  }
+
+}
