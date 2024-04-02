@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto";
 }
 
 ::selection {
@@ -145,7 +144,7 @@
 
 .section select {
   position: relative;
-  left: 15%;
+  left: 14.5%;
   background-color: #bdb9b9;
   color: #000;
   font-weight: 400;
@@ -320,26 +319,40 @@ td {
   height: 600px;
   width: 97%;
   margin: auto;
-  padding: 10px;
+  padding: 30px;
   border-radius: 20px;
   background: #fff;
 }
-.arrow {
-  width: 100%;
+
+ .filter{
+  color: #BDB9B9;
   position: relative;
-}
-.arrow a {
-  position: absolute;
   top: 20px;
-  right: 150px;
-  text-decoration: none;
+  right: 250px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   float: right;
-  font-weight: 700;
-  color: #000;
 }
-.arrow span:nth-last-child(-n + 4) {
+ .filter .sub-filter {
+  margin-top: 8px;
+  color: black;
   font-size: 20px;
-  color: #bdb9b9;
+  margin-right: 12px;
+  font-weight: 500;
+
+}
+ .filter .char {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 10px;
+  margin-top: 10px;
+}
+ .filter .arrow {
+  font-size: 25px;
+  margin-right: 16px;
+  margin-top: 5px;
 }
 
 .search {
@@ -358,6 +371,7 @@ td {
   opacity: 0.7;
   background: #fffbfa;
   padding-right: 30px;
+
 }
 .search i.fa-search {
   position: absolute;
@@ -385,11 +399,6 @@ td {
 .list1 .list-item1 th,
 td {
   border-bottom: 2px solid #d2d0d0;
-}
-
-.arrow span:nth-last-child(-n + 2) {
-  font-size: 20px;
-  color: #bdb9b9;
 }
 
 /*----------responsive-----------*/
